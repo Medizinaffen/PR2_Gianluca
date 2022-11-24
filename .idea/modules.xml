@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Grades_MitGui/Grades_MitGui.iml" filepath="$PROJECT_DIR$/Grades_MitGui/Grades_MitGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Grades_OhneGui/Grades_OhneGui.iml" filepath="$PROJECT_DIR$/Grades_OhneGui/Grades_OhneGui.iml" />
+    </modules>
+  </component>
+</project>

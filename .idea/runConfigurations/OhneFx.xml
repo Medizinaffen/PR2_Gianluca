@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="OhneFx" type="Application" factoryName="Application">
+    <envs>
+      <env name="VAR" value="java" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="app.grades_mitgui.HelloApplication" />
+    <module name="Grades_MitGui" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Grades_MitGui" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
