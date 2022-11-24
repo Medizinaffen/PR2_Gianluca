@@ -8,7 +8,7 @@ import java.util.List;
 public class Course {
     private String id;
     private String name;
-    private List<Student> studentList = new ArrayList<>();
+    private final List<Student> studentList = new ArrayList<>();
 
     public String getId() {
         return id;

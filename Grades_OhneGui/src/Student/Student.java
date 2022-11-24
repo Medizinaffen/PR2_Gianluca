@@ -1,44 +1,46 @@
 package Student;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Student {
     private String name;
-    private final ArrayList<Double> notenListe = new ArrayList<>();
 
+    public Double examGrade;
     private String majorShort;
     private String majorLong;
 
-    public String getMajorShort() {
-        return majorShort;
+    public Student(ArrayList<Double> gradeList, Double examGrade) {
     }
 
-    public void setMajorShort(String majorShort) {
-        this.majorShort = majorShort;
+    public double getFinaleGrade(Double preGradeFactor) {
+        return 0;
     }
 
-    public String getMajorLong() {
+    public void setGrades(Double grade) {
+    }
+
+    public String getMajor(String length) {
+        if (length.equals("short")) {
+            return majorShort;
+        }
         return majorLong;
     }
 
-    public void setMajorLong(String majorLong) {
+    public void setMajor(String majorShort, String majorLong) {
+        this.majorShort = majorShort;
         this.majorLong = majorLong;
     }
 
-    public Student() {
-
-    }
-
-    public void setGrades(Double note) {
-        notenListe.add(note);
-    }
-
-    public ArrayList<Double> getNoten() {
-        return notenListe;
+    public void setExamGrade(Double examGrade) {
+        this.examGrade = examGrade;
     }
 
     public void setName(String name) {
+        if (name == null) {
+            System.out.println("Name is null");
+        } else if (name.isEmpty()) {
+            System.out.println("Name cannot be empty");
+        }
         this.name = name;
     }
 
@@ -46,18 +48,4 @@ public class Student {
         return name;
     }
 
-    public Double getDurchschnitt() {
-        double x = 0;
-        for (Double note : notenListe) {
-            x += note;
-        }
-        removeLeastGrade();
-        return x / notenListe.size();
-    }
-
-    private void removeLeastGrade() {
-        Collections.sort(notenListe);
-
-        notenListe.remove(0);
-    }
 }
